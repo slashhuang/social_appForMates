@@ -142,6 +142,7 @@ a, a:hover, a:active, a:visited{
 }
 .app-main-detail b{
     margin-bottom:2px;
+    display: block;
 }
 .app-main-detail>em{
     background: url(image/user_value.png) no-repeat ;
@@ -163,9 +164,6 @@ a, a:hover, a:active, a:visited{
     color:#fff;
     display: inline-block;
     vertical-align: middle;
-}
-.app-main-detail b{
-    display: block;
 }
 .tags{
     color:#fff;
@@ -193,7 +191,7 @@ a, a:hover, a:active, a:visited{
     bottom:0;
     left:0;
     padding:15px 25px 0 70px;
-    background: url(/image/logo.png) no-repeat 5px 10px  #696969;
+    background: url(image/logo.png) no-repeat 5px 10px  #696969;
     background-size:60px 60px;
     color:#fff
 }
