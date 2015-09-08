@@ -13,6 +13,7 @@ body,p,ul,li,h1,h2,h3,h4,h5,h6,b,input,option,dl,dd,dt,i,em,b{
     outline:none
 }
 body {
+    color:#fff;
     min-width: 320px;
     padding:20px;
     background-color: #1f3332;
@@ -24,45 +25,190 @@ a, a:hover, a:active, a:visited{
     text-decoration: none;
     color:inherit;
 }
-.fl{float:left}
-.fr{float:right}
 .app-header{
-    width:50%;
-    height:60px;
+    width:100%
 }
-.user_gender_background{
+.app-header-user-Avatar{
+    float:left;
+}
+.app-header-user-Avatar img{
+    height:70px;
+    width:auto;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+.app-header-userInfo{
+    float:left;
+    height:70px;
+    font-size:20px;
+    position: relative;
+    margin-left:15px;
+}
+.app-header-userInfo div{
+    position: absolute;
+    width:200px;
+}
+.app-header-userInfo div h2{
+    display: inline;
+}
+.info{
+    top:0;
+    left:0;
+    height:30px;
+    font-size:20px;
+}
+.info span{
+    font-size:17px;
+    vertical-align: top
+}
+.info p{
     background: url(image/gender_female.png) no-repeat ;
     background-size:contain;
-    width:40px;
+    width:50px;
     height:20px;
     font-size:16px;
     line-height:20px;
     color:#fff;
+    padding-left:24px;
+    display: inline-block;
+    vertical-align: top;
 }
+.clear-float{}
+.clear-float:after{
+    content:"";
+    height:0;
+    display: block;
+    clear: both;
+}
+.title{
+    left:0;
+    bottom:0;
+ }
+.title h2{
+    padding:3px 8px;
+    font-size:16px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+.title h2:nth-of-type(1){
+    background:#3f9ce8 ;
+}
+.title h2:nth-of-type(2){
+    background:#83b4b1 ;
+}
+
 .app-main{
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
     border-radius: 20px;
-    border:1px #fff solid;
+    background:#fff;
     width:100%;
-    padding:0 10px 10px 10px;
+    margin-top:10px;
+    padding:0 10px 30px 10px;
+    margin-bottom:80px
 }
 .app-main-list{
     border-bottom:1px solid #e9e9e9;
-    padding:20px;
+    padding:15px 5px 10px 5px;
     display: list-item;
     list-style: none;
 }
-.app-main-list span{
+.app-main-list>span{
+    display: block;
+    padding-top:3px;
     color:#ff493e;
+    width:30%;
+    float:left;
+    font-size:15px;
 }
+.app-main-detail{
+    float:left;
+    width:70%;
+    color:#5b5b5b;
+    font-size:13px;
+    overflow: hidden;
+    padding-top:3px;
+}
+.app-main-detail div{
+    font-size: 10px;
+}
+.app-main-detail div h2{
+   display: inline-block;
+}
+.app-main-detail div em{
+    display: inline-block;
+}
+.app-main-detail b{
+    margin-bottom:2px;
+}
+.app-main-detail>em{
+    background: url(image/user_value.png) no-repeat ;
+    background-size:contain;
+    width:60px;
+    height:21px;
+    font-size:16px;
+    line-height:20px;
+    color:#fff;
+    padding-left:24px;
+    display: inline-block;
+    vertical-align: top;
+}
+.app-main-detail img{
+    width:14px;
+    height:20px;
+    font-size:16px;
+    line-height:20px;
+    color:#fff;
+    display: inline-block;
+    vertical-align: middle;
+}
+.app-main-detail b{
+    display: block;
+}
+.tags{
+    color:#fff;
+    padding:3px 4px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    display: inline-block;
+    font-size:11px;
+}
+.app-main-detail .tags:nth-of-type(1){
+    background:#ff493e
+}
+.app-main-detail .tags:nth-of-type(2){
+    background:#229538
+}
+.app-main-detail .tags:nth-of-type(3){
+    background:#00a0e9
+}
+
 .app-bottom{
     position: fixed;
     width:100%;
+    height:80px;
     bottom:0;
     left:0;
-    padding:15px 25px;
-    background: url(/image/logo.png) no-repeat  left 0  #696969;
-    background-size:40px 100px;
+    padding:15px 25px 0 70px;
+    background: url(/image/logo.png) no-repeat 5px 10px  #696969;
+    background-size:60px 60px;
     color:#fff
+}
+.app-download-button{
+    padding:10px 15px;
+    position:fixed;
+    bottom:20px;
+    right:10px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    background:#ff493e;
+    font-size:18px;
+}
+.app-bottom-list img{
+   width:10px;
+    height:10px;
 }
