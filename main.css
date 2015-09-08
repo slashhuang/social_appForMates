@@ -56,3 +56,13 @@ a, a:hover, a:active, a:visited{
 .app-main-list span{
     color:#ff493e;
 }
+.app-bottom{
+    position: fixed;
+    width:100%;
+    bottom:0;
+    left:0;
+    padding:15px 25px;
+    background: url(/image/logo.png) no-repeat  left 0  #696969;
+    background-size:40px 100px;
+    color:#fff
+}
